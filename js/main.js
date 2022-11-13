@@ -32,5 +32,12 @@
 
             return typingWords[rand];
         }
+        //animation of spans
+        let moveAll = setInterval(function() {
+            let allSpans = $('span');
+            allSpans.css({
+                left: '+=' + speed
+            })
+        }, 100)
     }
 })()
